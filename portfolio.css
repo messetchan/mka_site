@@ -1,0 +1,404 @@
+/* TABLETTES — max 1024px */
+@media (max-width: 1024px) {
+  .contact-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-left, 
+  .contact-right {
+    width: 100%;
+  }
+}
+
+/* TÉLÉPHONES — max 768px */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 26px;
+  }
+
+  .contact-right input,
+  .contact-right textarea {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .contact-right button {
+    width: 100%;
+  }
+}
+
+/* PETITS TÉLÉPHONES — max 480px */
+@media (max-width: 480px) {
+  .contact-info p {
+    font-size: 16px;
+  }
+
+  .contact-info i {
+    font-size: 20px;
+  }
+}
+
+
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 1px;
+}
+.logos img{
+  background-color: antiquewhite;
+  border-radius: 100%;
+  position: relative;
+  bottom: -5px;
+  width: 100px;
+  height: 100px;
+  
+}
+.nom{
+  text-align: center;
+  display: flex;
+  color: white;
+}
+
+nav,
+ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav_menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav_menu li a:hover {
+  color: #ff9800;
+}
+section#banner {
+  margin: 0px;
+  background: url(image\ vrai.jpeg) no-repeat center/cover;
+}
+#banner .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.description,
+.image1 {
+  flex: 1;
+}
+.description {
+  margin: 10px;
+  align-items: center;
+  padding: 40px;
+  color: white;
+}
+.accueil{
+  font-size: 25px;
+  display: center;
+}
+.image1 {
+  background-color: blueviolet;
+  border-radius: 100%;
+  position: relative;
+  bottom: -100px;
+}
+.image1 img {
+  margin: 6px;
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  /* agrandir ou diminuer la taille de l'image */
+  transform: scale(1.5);
+  object-position: top;
+}
+/* img {
+  width: 400px;
+  height: 350px;
+} */
+
+.salut,
+.paragraphe1 {
+  display: block;
+  text-align: center; /* centre le texte entre eux */
+  margin: 2;
+  padding: 2;
+  line-height: 0;
+}
+#btn1 {
+  padding: 12px 24px;
+}
+#btn {
+  background-color: rgba(198, 177, 177, 0.832);
+}
+.voir {
+  background-color: black;
+}
+.propos{
+  color: white;
+  padding: 5px;
+  margin: 1px;
+}
+#first {
+  display: flex;
+  justify-content: center;
+  height: none;
+}
+.second{
+  display: block;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 20px;
+  width: 70%;
+}
+#act{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  color: brown;
+  margin: 1px;
+  font-size: 30px;
+}
+#ser1{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.Nos-services {
+  text-align: center;
+  padding: 60px 40px;
+  background-color: #f8f8f8;
+  font-size: 20px;
+}
+.services-title {
+  text-align: center;
+}
+
+
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 260px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  display: flex;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  background-color: bisque;
+  text-align: 10px;
+}
+
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: brown;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #555;
+}
+#Nos-realisations{
+  background-color: rgb(189, 189, 186);
+  padding: 10px;
+}
+#job{
+  text-align: center;
+  margin: 10px 100px;
+
+}
+
+.realisations-container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  
+}
+.realisation-card {
+  width: 300px;               /* largeur fixe */
+  min-height: 350px;          /* hauteur minimale */
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  display: flex;              /* permet de gérer l’alignement vertical */
+  flex-direction: column;     /* empile img, h3 et p */
+  justify-content: flex-start;/* commence du haut */
+  overflow: hidden;
+}
+
+.realisation-card img {
+  width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 8px;
+  
+}
+.realisations-card p {
+  word-wrap: break-word;
+  font-size: 12px;
+}
+#works{
+  background-color: rgb(189, 189, 186);
+  padding: 10px;
+
+}
+#competences{
+  text-align: center;
+  margin: 10px 100px;
+}
+
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 60px;
+}
+
+.col {
+  width: 48%;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.skill span {
+  width: 30%;
+  font-weight: 60px;
+}
+
+.skill-bar {
+  width: 60%;
+  height: 10px;
+  background-color: #e5e5e5;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0 5px;
+}
+
+.skill-level {
+  height: 100%;
+  background-color: #d67474;
+  border-radius: 4px;
+}
+.percent {
+  width: 50%;
+  text-align:center;
+  font-weight: 20;
+}
+
+
+.contacts {
+  background-color: #f0b3b3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px 20px;
+  gap: 40px;
+}
+
+.contact-left {
+  width: 45%;
+}
+
+.contact-left h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact-left p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  font-size: 22px;
+}
+
+.contact-right {
+  width: 40%;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #000;
+  outline: none;
+  font-size: 16px;
+}
+
+.contact-right textarea {
+  height: 180px;
+  resize: none;
+}
+
+.contact-right button {
+  width: 180px;
+  padding: 14px;
+  background: #000;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-right button:hover {
+  background: #333;
+}
+
+
+
+
